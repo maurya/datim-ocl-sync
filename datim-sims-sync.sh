@@ -1,0 +1,3 @@
+curl -u $DHIS2_USERNAME:$DHIS2_PASSWORD -g -o /opt/openhim-shell-scripts/datim-sims-sync.xml 'https://dev-de.datim.org/api/dataElements.xml?fields=name,code,id,valueType,lastUpdated,dataElementGroups[id,name]&filter=dataElementGroups.id:in:[FZxMe3kfzYo,uMvWjOo31wt,wL1TY929jCS,Run7vUuLlxd,xGbB5HNDnC0,xDFgyFbegjl]&order=code:asc&paging=false'
+curl -H 'Authorization: Token a61ba53ed7b8b26ece8fcfc53022b645de0ec055' -o /opt/openhim-shell-scripts/response.tar -L 'https://oclapi-stg.openmrs.org/orgs/EthiopiaNHDD/sources/EHAH/v2017-02/export/'
+tar -xvf /opt/openhim-shell-scripts/response.tar /opt/openhim-shell-scripts/
